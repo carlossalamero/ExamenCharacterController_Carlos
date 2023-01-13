@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ThirdPersonController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class ThirdPersonController : MonoBehaviour
     private Animator animatronix;
     public Transform cam;
     public Transform LookAtTransform;
+    
+
 
     //variables salto y movimiento
     public float speed = 5;
@@ -99,5 +102,6 @@ void Jump()
         playerVelocity.y += gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
-
+     
+    
 }
